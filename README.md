@@ -64,23 +64,23 @@ python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 The prediction result is stored in the file ```dnn_output.npy```, it is located in the same folder that appeared in STEP 3.
 ****
 ### STEP 6.
+Load & convert the prediction result from probability to binary label.
 1. Copy script ```prob2bin.py``` from this repository to the same folder that appeared in STEP 3.
 2. Define the paths in the script.
 ```python
 data_path = '<Replace this string with the path of prediction result file (dnn_output.npy)>'
 outout_path = '<Replace this string with the path of output transformed file path + / + output transformed file name>'
-# Example:
+# e.g.
 data_path = './automatic-ecg-diagnosis-master/dnn_output.npy'
 outout_path = './automatic-ecg-diagnosis-master/dnn_output_bin.csv'
 ```
-
-
-Load & transform the prediction result from probability to binary label
-
-
-### STEP 7. 
-```python
-python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
+3. Save the script.
+4. Run the script.
+```bash
+python prob2bin.py
 ```
+5. The converted binary prediction results will be stored in the specified folder as a CSV file.
+****
+
 
 
