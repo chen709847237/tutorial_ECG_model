@@ -7,13 +7,34 @@ Ribeiro, A.H., Ribeiro, M.H., Paixão, G.M.M. et al. Automatic diagnosis of the 
 Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 ```
 ## Model and Data
-Model and Data used for reproducing experiments are available at: [Here](https://github.com/antonior92/automatic-ecg-diagnosis)
+Model and Data used for reproducing the prediction process are available at: [Here](https://github.com/antonior92/automatic-ecg-diagnosis)
 
 ## Requirements 
 TBC.
 
 ## Run the script
-### 1. Reproducing Experiments  
+### 1. Activate the anaconda
+```bash
+conda activate
+```
+### 2. Enter the environment
+```bash
+conda activate <name of environment>
+```
+e.g.
+```bash
+conda activate ecg
+```
+
+### 3. Enter the folder where the "automatic-ecg-diagnosis" scripts are stored.
+e.g.
+```bash
+cd /user/scripts/ECG/automatic-ecg-diagnosis-master/
+```
+
+### 4.
+
+
 
 #### Example:
 ```bash
