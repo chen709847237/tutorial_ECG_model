@@ -15,11 +15,11 @@ Test Data Download: [Here](https://zenodo.org/record/3765780#.YCOS8hMzbqU)
 TBC.
 
 ## Run the script
-### 1. Activate the anaconda
+### STEP 1. Activate the anaconda
 ```bash
 conda activate
 ```
-### 2. Enter the environment
+### STEP 2. Enter the environment
 ```bash
 conda activate <name of environment>
 ```
@@ -28,7 +28,7 @@ e.g.
 conda activate ecg
 ```
 
-### 3. Enter the folder where the "automatic-ecg-diagnosis" scripts are stored.
+### STEP 3. Enter the folder where the "automatic-ecg-diagnosis" scripts are stored.
 ```bash
 cd <path of folder>
 ```
@@ -37,7 +37,7 @@ e.g.
 cd /user/scripts/ECG/automatic-ecg-diagnosis-master/
 ```
 
-### 4. Run the script
+### STEP 4. Run the script
 ```bash
 python predict.py <path to test data (HDF5 file)> <path to model (HDF5 file)> --ouput_file <path of output folder/name of output file> 
 ```
@@ -46,12 +46,11 @@ e.g.
 python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5 --ouput_file ./predict_output
 ```
 
-### 5. The name of output file will end in ```.npy```
+### STEP 5. The name of output file will end in ```.npy```
 
-
-
-#### Example:
-```bash
-python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
+### STEP 6 Read the output file
+```python
+python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5 --ouput_file ./predict_output
 ```
+
 
