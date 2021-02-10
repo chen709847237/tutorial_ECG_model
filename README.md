@@ -37,7 +37,7 @@ e.g.
 conda activate ecg
 ```
 
-### Step 3. Enter the folder where the "automatic-ecg-diagnosis" repository was cloned
+### STEP 3. Enter the folder where the "automatic-ecg-diagnosis" repository was cloned
 ```bash
 cd <path of folder>
 ```
@@ -60,7 +60,7 @@ python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 ### STEP 6. Load & transform the prediction result from probability to binary label
 
 
-### STEP 7.
+### STEP 7. 
 ```python
 python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 ```
