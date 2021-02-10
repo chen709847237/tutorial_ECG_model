@@ -1,4 +1,4 @@
-# Transform the prediction results from probability to binary label.
+# Convert the prediction results from probability to binary label.
 import numpy as np
 import pandas as pd
 
