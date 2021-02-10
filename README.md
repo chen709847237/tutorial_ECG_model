@@ -1,4 +1,3 @@
-# tutorial_ECG_model
 # A Tutorial for classifying ECG signals by using CNN model
  
 ## References
