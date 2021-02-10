@@ -12,17 +12,17 @@ Model Download: [Here](https://zenodo.org/record/3765717#.YCOS8xMzbqU)
 Test Data Download: [Here](https://zenodo.org/record/3765780#.YCOS8hMzbqU)
 
 ## Requirements 
-numpy>=1.14.3
-pandas>=0.22
-tensorflow=2.2
-h5py>=2.8
-xmljson>=0.1.9
-scipy>=1.1
-scikit-learn>=0.20
-tqdm>=4.26
-xarray>=0.11.2
-seaborn>=0.9
-openpyxl>=3.0
+* numpy>=1.14.3
+* pandas>=0.22
+* tensorflow=2.2
+* h5py>=2.8
+* xmljson>=0.1.9
+* scipy>=1.1
+* scikit-learn>=0.20
+* tqdm>=4.26
+* xarray>=0.11.2
+* seaborn>=0.9
+* openpyxl>=3.0
 
 ## Run the script
 ### STEP 1. Activate the anaconda
