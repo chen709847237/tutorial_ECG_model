@@ -7,9 +7,9 @@ Ribeiro, A.H., Ribeiro, M.H., Paixão, G.M.M. et al. Automatic diagnosis of the 
 Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 ```
 ## Model and Data
-The scripts and detail of this model are available at: [Here](https://github.com/antonior92/automatic-ecg-diagnosis)
-Model Download: [Here](https://zenodo.org/record/3765717#.YCOS8xMzbqU)
-Test Data Download: [Here](https://zenodo.org/record/3765780#.YCOS8hMzbqU)
+* The scripts and detail of this model are available at: [Here](https://github.com/antonior92/automatic-ecg-diagnosis)
+* Model Download: [Here](https://zenodo.org/record/3765717#.YCOS8xMzbqU)
+* Test Data Download: [Here](https://zenodo.org/record/3765780#.YCOS8hMzbqU)
 
 ## Requirements 
 * numpy>=1.14.3
