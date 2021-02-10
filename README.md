@@ -1,5 +1,5 @@
 # tutorial_ECG_model
-## A Tutorial for classifying ECG signals by using CNN model
+# A Tutorial for classifying ECG signals by using CNN model
  
 ## References
 ```
@@ -38,7 +38,7 @@ e.g.
 conda activate ecg
 ```
 
-### STEP 3. Enter the folder where the "automatic-ecg-diagnosis" scripts are stored.
+### Step 3. Enter the folder where the "automatic-ecg-diagnosis" repository was cloned
 ```bash
 cd <path of folder>
 ```
@@ -58,8 +58,10 @@ python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 
 ### STEP 5. The prediction result is stored in the file ```dnn_output.npy```, it is located in the same folder that appeared in STEP 3.
 
-### STEP 6. Read the output file
-Open 
+### STEP 6. Load & transform the prediction result from probability to binary label
+
+
+### STEP 7.
 ```python
 python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 ```
