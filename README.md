@@ -24,12 +24,14 @@ Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 * openpyxl>=3.0
 
 ## Run the script
-### STEP 1. Activate the anaconda.
+### STEP 1. 
+Activate the anaconda.
 ```bash
 conda activate
 ```
 ****
-### STEP 2. Enter the environment.
+### STEP 2. 
+Enter the python environment.
 ```bash
 conda activate <name of environment>
 ```
@@ -37,8 +39,9 @@ e.g.
 ```bash
 conda activate ecg
 ```
-
-### STEP 3. Enter the folder where the "automatic-ecg-diagnosis" repository was cloned
+****
+### STEP 3. 
+Enter the folder where the "automatic-ecg-diagnosis" repository was cloned.
 ```bash
 cd <path of folder>
 ```
@@ -46,8 +49,9 @@ e.g.
 ```bash
 cd /user/scripts/ECG/automatic-ecg-diagnosis-master/
 ```
-
-### STEP 4. Run the script.
+****
+### STEP 4. 
+Run the script.
 ```bash
 python predict.py <path to test data (HDF5 file)> <path to model (HDF5 file)>
 ```
@@ -55,10 +59,12 @@ e.g.
 ```bash
 python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 ```
-
-### STEP 5. The prediction result is stored in the file ```dnn_output.npy```, it is located in the same folder that appeared in STEP 3.
-
-### STEP 6. Load & transform the prediction result from probability to binary label
+****
+### STEP 5. 
+The prediction result is stored in the file ```dnn_output.npy```, it is located in the same folder that appeared in STEP 3.
+****
+### STEP 6. 
+Load & transform the prediction result from probability to binary label
 
 
 ### STEP 7. 
