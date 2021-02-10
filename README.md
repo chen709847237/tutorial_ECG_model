@@ -28,6 +28,7 @@ Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 ```bash
 conda activate
 ```
+****
 ### STEP 2. Enter the environment.
 ```bash
 conda activate <name of environment>
