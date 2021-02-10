@@ -66,6 +66,14 @@ The prediction result is stored in the file ```dnn_output.npy```, it is located 
 ### STEP 6.
 1. Copy script ```prob2bin.py``` from this repository to the same folder that appeared in STEP 3.
 2. Define the paths in the script.
+```python
+data_path = '<Replace this string with the path of prediction result file (dnn_output.npy)>'
+outout_path = '<Replace this string with the path of output transformed file path + / + output transformed file name>'
+# Example:
+data_path = './automatic-ecg-diagnosis-master/dnn_output.npy'
+outout_path = './automatic-ecg-diagnosis-master/dnn_output_bin.csv'
+```
+
 
 Load & transform the prediction result from probability to binary label
 
