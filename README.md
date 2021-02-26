@@ -94,4 +94,5 @@ Pack padded csv files into hdf5 file. (script_5_csv2hdf5.py)
 ### STEP 6 
 Sort the ground truth label with the same order as data saved in the hdf5 file (script_6_order_label.py)
 
-:construction::construction::construction::construction::construction::construction::construction:
+
+:construction:\t:construction:
