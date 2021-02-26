@@ -78,11 +78,11 @@ python script_7_prob2bin.py
 Your binary prediction result should be exactly the same as the content of file ```dnn_output_bin.csv```
 
 ****
-## For our data
-### STEP 1. 
-Activate the anaconda.
+## Preprocessing Steps of Our Data
+### STEP 0 
+Extract ECG singnals from xml file as a csv file by using ECGTool
 ```bash
 conda activate
 ```
-****
+
 
