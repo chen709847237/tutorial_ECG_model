@@ -11,6 +11,7 @@ import xmltodict
 
 data_root_folder = '<Replace this string with the path of the folder where the HL7.xml files are stored>'
 output_root_folder = '<Replace this string with the path of the output target folder>'
+output_file_name = '<Replace this string with the name of the output csv file>'
 
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
@@ -60,5 +61,5 @@ for data_file in data_file_list:
 out_df = pd.DataFrame({'idx':file_idx_list, 'name':file_name_list, 'heartrate':hr_value_list, 'heartrate_unit':hr_unit_list})
 for key in conclusion_dict.keys():
     out_df['conclusion_'+str(key)] = conclusion_dict[key]
-out_df.to_csv('./test_data_info_conclu.csv', encoding="utf_8_sig", index=False)
+out_df.to_csv(output_root_folder+output_file_name, encoding="utf_8_sig", index=False)
 
