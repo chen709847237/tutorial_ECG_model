@@ -18,3 +18,4 @@ merge_data = pd.merge(check_idx, label_data, how='outer', on=['idx', 'idx'])
 merge_data.rename({'name_x': 'name', 'name_y': 'name_check'}, inplace=True, axis='columns')
 merge_data.to_csv(output_file_folder + output_file_name, encoding="utf_8_sig")
 
+
