@@ -78,7 +78,7 @@ python script_7_prob2bin.py
 Your binary prediction result should be exactly the same as the content of file ```dnn_output_bin.csv```
 
 ****
-## Preprocessing Steps of Our Data
+## Preprocessing Flow of Our Data
 ### STEP 0 
 Extract ECG signals from xml file as a csv file by using ECGToolkit. (Windows Only) (script_0_xml2csv.bat) :warning:TBC:warning: 
 ### STEP 1 
