@@ -82,7 +82,20 @@ Your binary prediction result should be exactly the same as the content of file 
 ### STEP 0 
 Extract ECG signals from xml file as a csv file by using ECGToolkit (Windows Only)
 ```bash
-conda activate
+TBC
 ```
+### STEP 1 
+diagnosis conclusion extraction (script_1_label_extract.py)
+### STEP 2  
+diagnosis conclusion extraction (script_1_label_extract.py)
+### STEP 3 
+diagnosis conclusion extraction (script_1_label_extract.py)
+### STEP 4 
+diagnosis conclusion extraction (script_1_label_extract.py)
+### STEP 5 
+diagnosis conclusion extraction (script_1_label_extract.py)
+### STEP 6 
+diagnosis conclusion extraction (script_1_label_extract.py)
+
 
 
