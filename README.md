@@ -80,22 +80,17 @@ Your binary prediction result should be exactly the same as the content of file 
 ****
 ## Preprocessing Steps of Our Data
 ### STEP 0 
-Extract ECG signals from xml file as a csv file by using ECGToolkit (Windows Only)
-```bash
-TBC
-```
+!!!TBC!!! Extract ECG signals from xml file as a csv file by using ECGToolkit. (Windows Only) (script_0_xml2csv.bat)
 ### STEP 1 
-diagnosis conclusion extraction (script_1_label_extract.py)
+Diagnosis conclusion extraction. (script_1_label_extract.py)
 ### STEP 2  
-diagnosis conclusion extraction (script_1_label_extract.py)
+ECG signals resampling, from 500Hz to 400Hz. (script_2_ecg_resample.py)
 ### STEP 3 
-diagnosis conclusion extraction (script_1_label_extract.py)
+Scale ECG signals, ECG signal X/600 currently. (script_3_scale.py)
 ### STEP 4 
-diagnosis conclusion extraction (script_1_label_extract.py)
+ECG signals padding, 4000x12 to 4096x12 (script_4_padding.py)
 ### STEP 5 
-diagnosis conclusion extraction (script_1_label_extract.py)
+Pack padded csv files into hdf5 file. (script_5_csv2hdf5.py)
 ### STEP 6 
-diagnosis conclusion extraction (script_1_label_extract.py)
-
-
+Sort the ground truth label with the same order as data saved in the hdf5 file (script_6_order_label.py)
 
