@@ -24,12 +24,12 @@ Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 * openpyxl>=3.0
 
 ## Run the Model
-### STEP 1. 
+### STEP 1
 Activate the anaconda.
 ```bash
 conda activate
 ```
-### STEP 2. 
+### STEP 2
 Enter the python environment.
 ```bash
 conda activate <name of environment>
@@ -38,8 +38,7 @@ e.g.
 ```bash
 conda activate ecg
 ```
-****
-### STEP 3. 
+### STEP 3
 Enter the folder where the "automatic-ecg-diagnosis" repository was cloned.
 ```bash
 cd <path of folder>
@@ -48,8 +47,7 @@ e.g.
 ```bash
 cd /user/scripts/ECG/automatic-ecg-diagnosis-master/
 ```
-****
-### STEP 4. 
+### STEP 4
 Run the script.
 ```bash
 python predict.py <path to test data (HDF5 file)> <path to model (HDF5 file)>
@@ -58,11 +56,9 @@ e.g.
 ```bash
 python predict.py ./data/ecg_tracings.hdf5 ./model/model.hdf5
 ```
-****
-### STEP 5. 
+### STEP 5 
 The prediction result is stored in the file ```dnn_output.npy```, it is located in the same folder that appeared in STEP 3.
-****
-### STEP 6.
+### STEP 6
 Load & convert the prediction result from probability to binary label.
 1. Copy script ```script_7_prob2bin.py``` from this repository to the same folder that appeared in STEP 3.
 2. Define the paths in the script.
@@ -78,11 +74,10 @@ outout_path = './automatic-ecg-diagnosis-master/dnn_output_bin.csv'
 python script_7_prob2bin.py
 ```
 4. The converted binary prediction results will be stored in the specified folder as a CSV file.
-****
 ### STEP 7.
 Your binary prediction result should be exactly the same as the content of file ```dnn_output_bin.csv```
-****
 
+****
 ## For our data
 ### STEP 1. 
 Activate the anaconda.
