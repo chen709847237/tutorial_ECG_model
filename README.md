@@ -23,13 +23,12 @@ Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 * seaborn>=0.9
 * openpyxl>=3.0
 
-## Run the model
+## Run the Model
 ### STEP 1. 
 Activate the anaconda.
 ```bash
 conda activate
 ```
-****
 ### STEP 2. 
 Enter the python environment.
 ```bash
