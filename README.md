@@ -74,7 +74,7 @@ outout_path = './automatic-ecg-diagnosis-master/dnn_output_bin.csv'
 python script_7_prob2bin.py
 ```
 4. The converted binary prediction results will be stored in the specified folder as a CSV file.
-### STEP 7.
+### STEP 7
 Your binary prediction result should be exactly the same as the content of file ```dnn_output_bin.csv```
 
 ****
