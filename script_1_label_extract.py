@@ -12,7 +12,6 @@ import xmltodict
 data_root_folder = '<Replace this string with the path of the folder where the HL7.xml files are stored>'
 output_root_folder = '<Replace this string with the path of the output target folder>'
 output_file_name = '<Replace this string with the name of the output csv file>'
-
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
 
