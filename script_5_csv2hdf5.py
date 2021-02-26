@@ -35,7 +35,7 @@ print(np.array(out_data).shape)
 print(np.array(data_idx).shape)
 print(np.array(data_name).shape)
 
-hdfFile = h5py.File(out_put_folder+output_file_name+'.h5', 'w')
+hdfFile = h5py.File(out_put_folder+out_put_file_name+'.h5', 'w')
 hdfFile.create_dataset('tracings', data=np.array(out_data))
 hdfFile.close()
 
