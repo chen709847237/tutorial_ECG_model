@@ -31,15 +31,11 @@ for data_file in data_file_list:
     count += 1
     print('file:', count)
 
-print(np.array(out_data).shape)
-print(np.array(data_idx).shape)
-print(np.array(data_name).shape)
-
-hdfFile = h5py.File(out_put_folder+out_put_file_name+'.h5', 'w')
+hdfFile = h5py.File(out_put_folder+out_put_file_name, 'w')
 hdfFile.create_dataset('tracings', data=np.array(out_data))
 hdfFile.close()
 
 out_data_info = {'idx': data_idx, 'name': data_name}
 out_df = pd.DataFrame(out_data_info)
-out_df.to_csv(out_put_folder+out_put_file_name+'_order.csv', encoding="utf_8_sig")
+out_df.to_csv(out_put_folder+out_put_file_name.split('.')[0]+'_order.csv', encoding="utf_8_sig")
 
