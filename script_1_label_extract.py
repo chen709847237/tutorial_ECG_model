@@ -9,8 +9,8 @@ import os
 import pandas as pd
 import xmltodict
 
-data_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_HL7/'
-output_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/'
+data_root_folder = '<Replace this string with the path of the folder where HL7.xml files were stored>'
+output_root_folder = '<Replace this string with the path of the output target folder>'
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
 
@@ -33,8 +33,6 @@ for data_file in data_file_list:
         heartrate_data_value = heartrate_data_group['value']
         heartrate_data_value_num = heartrate_data_group['value']['@value']
         heartrate_data_value_unit = heartrate_data_group['value']['@unit']
-        #print(heartrate_data_value_num, heartrate_data_value_unit)
-
         # annotations---interpretation
         interpretation_data_group = annotations_list[-1]['annotation']
         interpretation_data_name = interpretation_data_group['code']['@code']
@@ -44,23 +42,19 @@ for data_file in data_file_list:
         interpretation_conclusion_data_name = interpretation_conclusion_data_group['code']['@code']
         interpretation_conclusion_data_value = interpretation_conclusion_data_group['value']['#text']
         #print(interpretation_conclusion_data_value.split('\n'))
-
         xml.close()
 
     file_idx_list.append(file_idx+'\t')
     file_name_list.append(file_name)
     hr_value_list.append(heartrate_data_value_num)
     hr_unit_list.append(heartrate_data_value_unit)
-
+    
     conclusion_split_list = interpretation_conclusion_data_value.split('\n')
     if len(conclusion_split_list) < 5:
         conclusion_split_list = conclusion_split_list + [''] * (5-len(conclusion_split_list))
     for i in range(0, 5): conclusion_dict[i].append(conclusion_split_list[i])
-
     count += 1
-
     print(count)
-
 
 out_df = pd.DataFrame({'idx':file_idx_list, 'name':file_name_list, 'heartrate':hr_value_list, 'heartrate_unit':hr_unit_list})
 for key in conclusion_dict.keys():
