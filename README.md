@@ -80,7 +80,7 @@ Your binary prediction result should be exactly the same as the content of file 
 ****
 ## Preprocessing Steps of Our Data
 ### STEP 0 
-Extract ECG singnals from xml file as a csv file by using ECGTool
+Extract ECG signals from xml file as a csv file by using ECGToolkit (Windows Only)
 ```bash
 conda activate
 ```
