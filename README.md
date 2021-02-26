@@ -65,7 +65,7 @@ The prediction result is stored in the file ```dnn_output.npy```, it is located 
 ****
 ### STEP 6.
 Load & convert the prediction result from probability to binary label.
-1. Copy script ```prob2bin.py``` from this repository to the same folder that appeared in STEP 3.
+1. Copy script ```script_7_prob2bin.py``` from this repository to the same folder that appeared in STEP 3.
 2. Define the paths in the script.
 ```python
 data_path = '<Replace this string with the path of prediction result file (dnn_output.npy)>'
