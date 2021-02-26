@@ -80,7 +80,7 @@ Your binary prediction result should be exactly the same as the content of file 
 ****
 ## Preprocessing Steps of Our Data
 ### STEP 0 
-:warning:TBC:warning: Extract ECG signals from xml file as a csv file by using ECGToolkit. (Windows Only) (script_0_xml2csv.bat)
+Extract ECG signals from xml file as a csv file by using ECGToolkit. (Windows Only) (script_0_xml2csv.bat) :warning:TBC:warning: 
 ### STEP 1 
 Diagnosis conclusion extraction. (script_1_label_extract.py)
 ### STEP 2  
