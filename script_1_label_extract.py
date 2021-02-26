@@ -42,7 +42,6 @@ for data_file in data_file_list:
         interpretation_conclusion_data_group = interpretation_data_list[-1]['annotation']
         interpretation_conclusion_data_name = interpretation_conclusion_data_group['code']['@code']
         interpretation_conclusion_data_value = interpretation_conclusion_data_group['value']['#text']
-        #print(interpretation_conclusion_data_value.split('\n'))
         xml.close()
 
     file_idx_list.append(file_idx+'\t')
