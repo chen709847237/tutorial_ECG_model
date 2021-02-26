@@ -23,7 +23,7 @@ Nat Commun 11, 1760 (2020). https://doi.org/10.1038/s41467-020-15432-4
 * seaborn>=0.9
 * openpyxl>=3.0
 
-## Run the script
+## Run the model
 ### STEP 1. 
 Activate the anaconda.
 ```bash
@@ -84,4 +84,11 @@ python script_7_prob2bin.py
 Your binary prediction result should be exactly the same as the content of file ```dnn_output_bin.csv```
 ****
 
+## For our data
+### STEP 1. 
+Activate the anaconda.
+```bash
+conda activate
+```
+****
 
