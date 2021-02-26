@@ -9,8 +9,9 @@ import os
 import pandas as pd
 import xmltodict
 
-data_root_folder = '<Replace this string with the path of the folder where HL7.xml files were stored>'
+data_root_folder = '<Replace this string with the path of the folder where the HL7.xml files are stored>'
 output_root_folder = '<Replace this string with the path of the output target folder>'
+
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
 
