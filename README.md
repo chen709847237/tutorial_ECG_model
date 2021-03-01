@@ -84,7 +84,7 @@ Extract ECG signals from xml file as a csv file by using ECGToolkit. (:warning: 
 cd <The path to the folder of xml2csv.bat>
 xml2csv <The path to the folder of ECG toolkit> <The path to the folder of HL7 xml files> <The path to the folder of output csv files>
 ```
-```<The path to the folder of ECG toolkit>```: this folder should exactly look like the following figure. 
+NOTE: ```<The path to the folder of ECG toolkit>```, this folder should exactly look like the following figure. 
 ![image](http://github.com/chen709847237/tutorial_ECG_model/raw/main/img/folder_ECGToolkit.png)
 
 e.g.
