@@ -79,7 +79,14 @@ Your binary prediction result should be exactly the same as the content of file 
 
 ## Preprocessing Flow of Our Data
 ### STEP 0 
-~~Extract ECG signals from xml file as a csv file by using ECGToolkit. (Windows Only) (script_0_xml2csv.bat)~~ :warning:TBC.:warning: 
+Extract ECG signals from xml file as a csv file by using ECGToolkit. (:warning: Windows Only :warning:) (script_0_xml2csv.bat)
+```bash
+D:\ECG>xml2csv <The path to the folder of ECG toolkit> <The path to the folder of HL7 xml files> <The path to the folder of output csv files>
+```
+e.g.
+```bash
+D:\ECG>xml2csv D:\ECG\ECGToolkit\ D:\ECG\ECG_data_2batch\1dAVB\ D:\ECG\ECG_data_2batch_csv\1dAVB\
+```
 ### STEP 1 
 Diagnosis conclusion extraction. (script_1_label_extract.py)
 ### STEP 2  
