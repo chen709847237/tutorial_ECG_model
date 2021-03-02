@@ -10,9 +10,13 @@ import numpy as np
 import pandas as pd
 import h5py
 
-data_root_folder = '<Replace this string with the path of the folder where padded ECG signal data files are stored>'
-out_put_folder = '<Replace this string with the path of the output hdf5 file folder>'
-out_put_file_name = '<Replace this string with the name of the output hdf5 file>'
+data_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/ECG_data_CSV_400Hz_scale_pad/1dAVB/'
+out_put_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/ECG_data_CSV_400Hz_scale_pad_hdf5/'
+out_put_file_name = 'data_1dAVB.h5'
+
+#data_root_folder = '<Replace this string with the path of the folder where padded ECG signal data files are stored>'
+#out_put_folder = '<Replace this string with the path of the output hdf5 file folder>'
+#out_put_file_name = '<Replace this string with the name of the output hdf5 file>'
 
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
@@ -23,10 +27,19 @@ out_data = []
 out_data_info = {}
 for data_file in data_file_list:
     data = pd.read_csv(data_root_folder+data_file, index_col='samplenr')
-    print(str(data_file.split('_')[0]))
-    print(str(data_file.split('_')[1].split('.')[0]))
-    data_idx.append(str(data_file.split('_')[0])+'\t')
-    data_name.append(str(data_file.split('_')[1].split('.')[0]))
+
+    # for ECG data 1 only
+    #print(str(data_file.split('_')[0]))
+    #print(str(data_file.split('_')[1].split('.')[0]))
+    #data_idx.append(str(data_file.split('_')[0])+'\t')
+    #data_name.append(str(data_file.split('_')[1].split('.')[0]))
+
+    # for ECG data 2 only
+    print(data_file)
+    print(str(data_file.split('.')[0]))
+    data_idx.append(str(data_file.split('.')[0])+'\t')
+    data_name.append(str(np.nan))
+
     out_data.append(data)
     count += 1
     print('file:', count)

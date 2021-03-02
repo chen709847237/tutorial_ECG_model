@@ -8,22 +8,32 @@
 import os
 import pandas as pd
 import xmltodict
+import numpy as np
 
-data_root_folder = '<Replace this string with the path of the folder where the HL7.xml files are stored>'
-output_root_folder = '<Replace this string with the path of the output target folder>'
-output_file_name = '<Replace this string with the name of the output csv file>'
+data_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/ECG_data_HL7/1dAVB/'
+output_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/'
+output_file_name = 'label_1dAVB.csv'
+
+#data_root_folder = '<Replace this string with the path of the folder where the HL7.xml files are stored>'
+#output_root_folder = '<Replace this string with the path of the output target folder>'
+#output_file_name = '<Replace this string with the name of the output csv file>'
 
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
 file_idx_list, file_name_list = [], []
 hr_value_list, hr_unit_list = [], []
-conclusion_dict = {0: [], 1: [], 2: [], 3: [], 4: []}
+conclusion_dict = {0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: [], 9: []}
 
 count = 0
 for data_file in data_file_list:
 
-    file_idx = data_file.split('_')[0]
-    file_name = data_file.split('_')[1].split('.')[0]
+    # For ECG data 2 only
+    file_idx = data_file.split('.')[0]
+    file_name = np.nan
+
+    # For ECG data 1 only
+    #file_idx = data_file.split('_')[0]
+    #file_name = data_file.split('_')[1].split('.')[0]
 
     with open(data_root_folder+data_file, 'rb') as xml:
         data = xmltodict.parse(xml.read().decode('utf8'))
@@ -50,9 +60,9 @@ for data_file in data_file_list:
     hr_unit_list.append(heartrate_data_value_unit)
     
     conclusion_split_list = interpretation_conclusion_data_value.split('\n')
-    if len(conclusion_split_list) < 5:
-        conclusion_split_list = conclusion_split_list + [''] * (5-len(conclusion_split_list))
-    for i in range(0, 5): conclusion_dict[i].append(conclusion_split_list[i])
+    if len(conclusion_split_list) < 10:
+        conclusion_split_list = conclusion_split_list + [''] * (10-len(conclusion_split_list))
+    for i in range(0, 10): conclusion_dict[i].append(conclusion_split_list[i])
     count += 1
     print(count)
 
