@@ -10,11 +10,8 @@ from wfdb import processing
 import numpy as np
 import pandas as pd
 
-data_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/ECG_data_csv/1dAVB/'
-output_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/ECG_data_2/ECG_data_CSV_400Hz/1dAVB/'
-
-#data_root_folder = '<Replace this string with the path of the folder where the 500 Hz csv files are stored>'
-#output_root_folder = '<Replace this string with the path of the output target folder>'
+data_root_folder = '<Replace this string with the path of the folder where the 500 Hz csv files are stored>'
+output_root_folder = '<Replace this string with the path of the output target folder>'
 
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
