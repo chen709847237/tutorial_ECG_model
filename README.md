@@ -1,5 +1,8 @@
 # A Tutorial for classifying ECG signals by using CNN model
- 
+
+## Update 7/April/2021: New Extraction Script for New XML Data Format
+
+
 ## References
 ```
 Ribeiro, A.H., Ribeiro, M.H., Paixão, G.M.M. et al. Automatic diagnosis of the 12-lead ECG using a deep neural network.
