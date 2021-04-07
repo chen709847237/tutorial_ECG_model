@@ -9,9 +9,9 @@ import os
 import pandas as pd
 import xmltodict
 
-data_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/sample_2021_4_6/raw_data/'
-output_root_folder = '/Users/chenjiarui/Python Dev/Lab_project/ECG/sample_2021_4_6/'
-output_file_name = 'sample_data_label_summary.csv'
+data_root_folder = '<Replace this string with the path of the folder where the XML files are stored>'
+output_root_folder = '<Replace this string with the path of the output target folder>'
+output_file_name = '<Replace this string with the name of the output label csv file>'
 
 data_file_list = os.listdir(data_root_folder)
 if '.DS_Store' in data_file_list: data_file_list.remove('.DS_Store')
@@ -21,16 +21,11 @@ patient_name_list, patient_birth_list, patient_gender_list = [], [], []
 sample_rate_num_list, sample_rate_unit_list = [], []
 vr_value_list, vr_unit_list = [], []
 wave_length_list = []
-
 max_interpretation_num = 5
 interpretation_dict = {0: [], 1: [], 2: [], 3: [], 4: []}
-
-
 count = 0
 for data_file in data_file_list:
-
     file_name = data_file.split('.')[0]
-
     with open(data_root_folder + data_file, 'rb') as xml:
         data = xmltodict.parse(xml.read().decode('utf8'))
         xml.close()
