@@ -1,6 +1,6 @@
 # A Tutorial for classifying ECG signals by using CNN model
 
-## :fire: Update: 7/April/2021: New Extraction Script for New XML Data Format
+## :fire:7/April/2021 UPDATE: A New Extraction Script for XML file with New Data Format
 
 
 ## References
