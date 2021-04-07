@@ -1,9 +1,19 @@
 # A Tutorial for classifying ECG signals by using CNN model
 
 ## :fire:UPDATE(2021.4.7): A New Extraction Script for XML with New Data Format
-
-
-
+Input: XML file(s)
+Ouput: ECG tracing file(s) (csv) and diagnosis label file (csv) 
+Before running the script, please define a few variables in the script:
+```python
+data_root_folder = '<Replace this string with the path of the folder where the XML files are stored>'
+output_root_folder = '<Replace this string with the path of the output target folder>'
+output_file_name = '<Replace this string with the name of the output label csv file>'
+# e.g.
+data_root_folder = './Lab_project/ECG/sample_2021_4_6/raw_data/'
+output_root_folder = './Lab_project/ECG/sample_2021_4_6/'
+output_file_name = 'sample_data_label_summary.csv'
+```
+   
 
 ## References
 ```
